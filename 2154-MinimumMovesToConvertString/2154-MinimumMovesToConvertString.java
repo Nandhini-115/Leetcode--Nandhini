@@ -1,0 +1,17 @@
+// Last updated: 11/08/2026, 14:15:07
+class Solution {
+    public int minimumMoves(String s) {
+        int c= 0;
+        int i = 0;
+        while (i < s.length()) {
+            if (s.charAt(i) == 'X') {
+                c++;
+                i += 3; 
+            } else {
+                i++;
+            }
+        }
+
+        return c;
+    }
+}
